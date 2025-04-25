@@ -1,0 +1,191 @@
+#prison_break {
+  background-image: url(../img/fondo_prison_break.jpg);
+}
+
+#tron {
+  background-image: url(../img/fondo_tron.png);
+}
+
+#index {
+  background-image: url(../img/fondo_index.jpg);
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+td {
+    text-align: center;
+}
+
+.parrafo {
+    display: inline;
+}
+
+.texto_derecha {
+    text-align: right;
+}
+
+.img_portada {
+  height: 300px;
+  width: 200px;
+  border-radius: 5%;
+}
+
+.nombre_actor {
+    font-weight: bold;
+    font-size: large;
+}
+
+.img_personaje {
+    height: 200px;
+    width: 150px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 25%;
+}
+
+.img_relacionada{
+    height: 300px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15%;
+}
+
+.caja {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(14, 14, 14);
+  color: white;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px 20px;
+  a:link {
+    color:white
+  }
+}
+
+.barra-links a {
+  text-decoration: underline;
+  color: (white);
+  font-weight: bold;
+}
+
+.titulos{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px 20px;
+}
+
+.barra_superior {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-seccion p {
+  margin: 5px 0 0 0;
+  font-size: 1.2em;
+}
+
+.poster {
+   width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contenido {
+  background-color: white; /* Fondo blanco para las reseñas */
+  padding: 30px;
+}
+
+.opinion {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.opinion h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.review {
+    font-size: large;
+   color: #000;
+}
+
+.tabla {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.item {
+  background-color: black;
+  border: 2px solid lightsteelblue;
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.container_index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.item_index {
+  background-color: black;
+  border: 3px solid orangered;
+  border-radius: 13px;
+  padding: 5%;
+  padding-top: 0%;
+}
+
+.container_login {
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_login {
+  background-color: black;
+  border: 3px solid orangered;
+  border-radius: 13px;
+  padding: 4%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.text_login_title {
+  text-align: center;
+}
+
+.text_login {
+  font-size: small;
+  text-align: left;
+}

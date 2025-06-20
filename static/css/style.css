@@ -1,3 +1,7 @@
+#index {
+  background-image: url(../img/fondo_index.jpg);
+}
+
 #prison_break {
   background-image: url(../img/fondo_prison_break.jpg);
 }
@@ -6,8 +10,8 @@
   background-image: url(../img/fondo_tron.png);
 }
 
-#index {
-  background-image: url(../img/fondo_index.jpg);
+#dark {
+  background-image: url(../img/fondo_dark.jpg);
 }
 
 body {
@@ -16,12 +20,13 @@ body {
     color: white;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  }
 
 h1 {
     text-align: center;
     text-decoration: underline;
     font-size: 50px;
+    font-family: serif
 }
 
 a {
@@ -74,14 +79,38 @@ td {
   color: white;
 }
 
-.links{
+.logo {
+  height: 50px;
+  width: 100px;
+}
+
+.img_centrar img {
+  top: 0;
+  display: block;
+  margin: auto;
+  margin-left: 515px;
+}
+
+.links {
   display: flex;
   justify-content: space-between; 
-  align-items: center;            
+  align-items: center;
   padding: 10px 20px;
   a:link {
     color:white
   }
+}
+
+.links a {
+  color: #9cf;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .barra-links a {
@@ -98,11 +127,25 @@ td {
 }
 
 .barra_superior {
-  background-color: rgb(40, 35, 35);
+  background: linear-gradient(to right, #111, #222);
   color: white;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000;
   text-align: center;
-  border-radius: 20px;
+}
+
+.barra_superior h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px #000;
+}
+
+.barra_superior h3 {
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: normal;
+  color: #ccc;
 }
 
 .titulo-seccion p {
@@ -117,23 +160,35 @@ td {
 }
 
 .contenido {
-  background-color: white; /* Fondo blanco para las reseñas */
   padding: 30px;
 }
 
 .opinion {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #888;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #000;
 }
 
 .opinion h2 {
-  margin: 0 0 10px 0;
-  color: #333;
+  color: #ffcc00;
+  margin-bottom: 10px;
 }
 
 .review {
-    font-size: large;
-   color: #000;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+.botones {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px; 
+}
+.oculto {
+  display: none;
 }
 
 .tabla {
@@ -181,13 +236,10 @@ td {
   background-color: black;
   border: 3px solid orangered;
   border-radius: 13px;
-  padding: 4%;
-  padding-top: 2%;
-  padding-bottom: 3%;
-}
-
-.text_login_title {
-  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px
 }
 
 .text_login {
@@ -231,7 +283,6 @@ p {
 label {
   display: block;
   margin-left: 15px;
-  cursor: pointer;
 }
 
 input[type="radio"] {
@@ -301,4 +352,161 @@ label {
 display: block;
 margin: 5px 0;
 padding-left: 15px;
+}
+
+.caja_sup_der {
+  position: absolute;
+  border-radius: 15px;
+  top: 15px;
+  right: 5px;
+  background-color: black; 
+  padding: 10px 20px;
+}
+
+.error {
+  color: red; 
+  font-size: 0.9em; 
+}
+
+.formulario-opinion {
+  background-color: #333;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #111;
+}
+ 
+.formulario-opinion h2 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+ 
+.formulario-opinion label {
+  display: block;
+  margin-top: 10px;
+}
+ 
+.formulario-opinion input[type="text"],
+.formulario-opinion input[type="number"],
+.formulario-opinion textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+}
+ 
+.formulario-opinion input[type="submit"] {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+ 
+.formulario-opinion input[type="submit"]:hover {
+  background-color: #e6b800;
+}
+
+.barra_superior2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+}
+
+.barra_superior a {
+  color: #81baf5;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.titulo-seccion h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.titulo-seccion h3 {
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.botones {
+  margin-top: 15px;
+}
+
+.botones button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.contenido {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
+
+.opinion {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-opinion2 {
+     background-color: rgba(0, 0, 0, 0.6);
+     padding: 20px;
+     border-radius: 12px;
+     margin-top: 40px;
+     box-shadow: 0 0 15px black;
+}
+
+.input_opinion {
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+}
+
+input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #198754;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+}
+
+#comments-container {
+  background-color: grey;
+  color: black;
+  border-radius: 5px;
+  padding-left: 5px;
 }

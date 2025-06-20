@@ -51,7 +51,7 @@ function main() {
     } else if (s4 === -1) {
       resultado += "<p style='color: orange;'>⚠️ Pregunta 4: No contestada.</p>"
     } else {
-      resultado += "<p style='color: red;'>❌ Pregunta 4: Incorrecta. Correcta: <b>Chicago</b></p>"
+      resultado += "<p style='color: red;'>❌ Pregunta 4: Incorrecta.</p>"
     }
 
 

@@ -7,32 +7,17 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body id="index">
-    <div class="links">
-        <a href="login.html">Iniciar sesion</a>
-    </div>
+    <div class="links img_centrar">
+        <a href="registro.html">registrarse</a>
+
+        <img class="logo" src="static/img/logo.jpg" alt="">
+
+        <a class="caja_sup_der" href="login.html">Login</a>
+      </div>
 
     <div class="container_index">
     <div class="item_index">
         <h1> Bienvenido a nuestra pagina de reseñas </h1>
-
-        <h3>Integrantes: </h3>
-        <ul>
-            <li>
-                Moyano Benjamin, 1225238
-            </li>
-            <li>
-                Jara Martinez Matias Nahuel, 1215449
-            </li>
-            <li>
-                Maira Hernandez Santino Luca, 1224196
-            </li>
-            <li>
-                Banchero Teo, 1215031
-            </li>
-        </ul> <br>
-        
-
-
 
     <h2> Nuestras ultimas reseñas: </h2>
 
@@ -48,14 +33,29 @@
             </td>
             <td>
                 <img class="img_portada" src="static/img/dark.jpg" alt=""> <br>
-                <a href="">Dark (2017)</a>
+                <a href="dark.html">Dark (2017)</a>
             </td>
         </tr>
     </table> <br>
 
     <h4> <label for="comentarios"> Comentarios: </label></h4>
-    <input class="caja" type="text" name="comentarios" id="comentarios" placeholder="Deja tus comentarios..."> <br> <br>
-    <input class="boton-login" type="button" value="Subir">
+    <div id="comments-container"></div>
+        <div class="formulario-opinion2">
+        <h2>Escribe tu opinión</h2>
+        <form class="input_opinion" id="form-opinion">
+        <label>Nombre:</label><br>
+        <input type="text" id="nombre" required><br><br>
+         
+            <label>Fecha (dd/mm/aaaa):</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+            <label>Tu opinión:</label><br>
+        <textarea id="texto" rows="5" cols="40" required></textarea><br><br>
+         
+            <input type="submit" value="Enviar opinión">
+        </form>
+        </div>
     </div> </div>
+    <script src="static/js/agregarOpinionIndex.js"></script>
 </body>
 </html>
